@@ -79,18 +79,13 @@
 -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
     
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-
-#warning vielleicht wieder an machen!
-//    for (NodeViewController *node in [dictNodes allValues]) {
-//        [node didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-//    }
     
     NSLog(@"(root) currentpageindex = %d", self.pagingView.currentPageIndex);
 }
 
 
 - (NSInteger)numberOfPagesInPagingView:(ATPagingView *)pagingView {
-    return 15;
+    return 10;
 }
 
 - (UIView *)viewForPageInPagingView:(ATPagingView *)pagingView atIndex:(NSInteger)index {
